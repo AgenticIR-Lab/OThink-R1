@@ -1,0 +1,9 @@
+defaults:
+  - model: DeepSeek-R1-Distill-Qwen-7B-Fix
+  - data: OpenBookQA
+  - utils: default
+  - _self_
+
+hydra:
+  run:
+    dir: ${utils.output_config_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}

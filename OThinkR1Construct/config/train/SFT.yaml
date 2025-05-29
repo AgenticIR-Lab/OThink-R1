@@ -1,0 +1,15 @@
+# @package _global_
+train:
+  name: SFT
+  trainerConifg:
+    wandb_project: Your-Wandb-Project-Name
+    save_model_prefix: Your-Save-Model-Prefix
+    model_id: /Your/Own/Model/Path
+    data_id: /Your/Own/Data/ID
+    accumulate_steps: 1
+    per_device_batch: 4
+    lr: 4e-5
+    train_epochs: 10
+    model_save_steps: 1500
+
+

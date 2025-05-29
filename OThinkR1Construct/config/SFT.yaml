@@ -1,0 +1,9 @@
+defaults:
+  - train: SFT
+  - utils: default
+  - logging: wandb
+  - _self_
+
+hydra:
+  run:
+    dir: ${utils.output_config_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}

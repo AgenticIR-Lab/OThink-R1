@@ -1,0 +1,4 @@
+# @package _global_
+utils:
+  seed: 42
+  output_config_dir: ./save_configs

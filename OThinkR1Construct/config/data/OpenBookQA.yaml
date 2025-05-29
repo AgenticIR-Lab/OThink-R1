@@ -1,0 +1,22 @@
+# @package _global_
+data:
+  datasets:
+    OpenBookQA:
+      _target_: core.dataset_processor.OpenBookQAProcessor
+      path: Your/OpenBookQA/Data/Path
+      splits:
+        train:
+          name: train
+          slice: "[:100%]"
+          columns_to_remove: []
+        validation:
+          name: validation
+          slice: "[:100%]"
+          columns_to_remove: []
+        test:
+          name: test
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "choice_selecting"
+      subset: "main"
+      eval_split: "test"

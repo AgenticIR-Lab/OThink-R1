@@ -1,0 +1,25 @@
+# @package _global_
+data:
+  datasets:
+    ASDIV:
+      _target_: core.dataset_processor.ASDIVProcessor
+      path: Your/ASDIV/Data/Path
+      splits:
+        validation:
+          name: "validation"
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "math_verify"
+      subset: 
+      eval_split: "validation"
+    GSM8K:
+      _target_: core.dataset_processor.GSM8KProcessor
+      path: Your/GSM8K/Data/Path
+      splits:
+        validation:
+          name: "validation"
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "math_verify"
+      subset: 
+      eval_split: "validation"

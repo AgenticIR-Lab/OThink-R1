@@ -1,0 +1,18 @@
+# @package _global_
+data:
+  datasets:
+    GSM8K:
+      _target_: core.dataset_processor.GSM8KProcessor
+      path: Your/GSM8K/Data/Path
+      splits:
+        train:
+          name: train
+          slice: "[:100%]"
+          columns_to_remove: []
+        test:
+          name: test
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "math_verify"
+      subset: "main"
+      eval_split: "test"

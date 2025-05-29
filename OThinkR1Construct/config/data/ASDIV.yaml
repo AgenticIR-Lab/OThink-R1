@@ -1,0 +1,18 @@
+# @package _global_
+data:
+  datasets:
+    ASDIV:
+      _target_: core.dataset_processor.ASDIVProcessor
+      path: Your/ASDIV/Data/Path
+      splits:
+        train:
+          name: train
+          slice: "[:100%]"
+          columns_to_remove: []
+        test:
+          name: test
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "math_verify"
+      subset: 
+      eval_split: "test"

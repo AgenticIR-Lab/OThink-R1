@@ -1,0 +1,25 @@
+# @package _global_
+data:
+  datasets:
+    CommonsenseQA:
+      _target_: core.dataset_processor.CommonsenseQAProcessor
+      path: Your/CommonsenseQA/Data/Path
+      splits:
+        validation:
+          name: "validation"
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "choice_selecting"
+      subset: 
+      eval_split: "validation"
+    OpenBookQA:
+      _target_: core.dataset_processor.OpenBookQAProcessor
+      path: Your/OpenBookQA/Data/Path
+      splits:
+        validation:
+          name: "validation"
+          slice: "[:100%]"
+          columns_to_remove: []
+      verify: "choice_selecting"
+      subset: 
+      eval_split: "validation"

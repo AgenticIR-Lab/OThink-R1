@@ -1,0 +1,13 @@
+# @package _global_
+model:
+  name: DeepSeek-R1-Distill-Qwen-7B-Fix
+  model_size: 7B
+  path: /Your/DeepSeek-R1-Distill-Qwen-7B-Fix/Model/Path
+  inference:
+    tensor_parallel_size: 4
+    enable_prefix_caching: True
+    gpu_memory_utilization: 0.95
+    temperature: 0.9
+    top_p: 0.95
+    max_tokens: 16384
+    skip_special_tokens: True

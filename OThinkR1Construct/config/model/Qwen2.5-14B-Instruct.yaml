@@ -1,0 +1,13 @@
+# @package _global_
+model:
+  name: Qwen2.5-14B-Instruct
+  model_size: 14B
+  path: /Your/Qwen2.5-14B-Instruct/Model/Path
+  inference:
+    tensor_parallel_size: 4
+    enable_prefix_caching: True
+    gpu_memory_utilization: 0.95
+    temperature: 0.9
+    top_p: 0.95
+    max_tokens: 16384
+    skip_special_tokens: True
