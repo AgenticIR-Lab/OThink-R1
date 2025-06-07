@@ -1,8 +1,5 @@
 # OThink-R1 Official Code
 
-This repository contains the code for the submission to the NeurIPS 2025.
-
-
 # Conda Environment
 
 We provide the environment requirements, you can construct the environment as:
